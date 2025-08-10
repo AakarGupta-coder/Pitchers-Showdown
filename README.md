@@ -1,7 +1,6 @@
 # Pitchers Showdown
 
-Pitchers Showdown is an interactive platform by the Entrepreneurship Cell of VIT Chennai where users can pitch business ideas, explore other ventures, and invest virtual currency.  
-The project combines **real-time engagement**, **secure authentication**, and **scalable backend architecture** to create a dynamic entrepreneurship ecosystem.
+Pitchers Showdown is an interactive platform by the Entrepreneurship Cell of VIT Chennai where users can pitch business ideas, explore other ventures, and invest virtual currency. The project combines **real-time engagement**, **secure authentication**, and **scalable backend architecture** to create a dynamic entrepreneurship ecosystem.
 
 ---
 
@@ -53,17 +52,25 @@ The project combines **real-time engagement**, **secure authentication**, and **
 ```
 Pitchers-Showdown/
 │
-├── server/               # Backend server code
-│   ├── models/           # MongoDB models (User, Token, etc.)
-│   ├── routes/           # API route handlers
-│   ├── middleware/       # Authentication middleware
-│   ├── server.js         # Express app entry point
-│   └── .env.example      # Environment variables example
+├── client/                 
+│   ├── public/             
+│   ├── src/                
+│   │   ├── assets/         
+│   │   ├── components/     
+│   │   ├── pages/          
+│   │   ├── services/       
+│   │   └── styles/         
+│   └── config/             
 │
-├── client/               # Frontend code (if applicable)
+├── server/                 
+│   ├── middleware/         
+│   ├── models/             
+│   ├── routes/             
+│   ├── utils/              
+│   └── config/             
 │
-├── LICENSE               # AGPL v3 license
-└── README.md             # Project documentation
+├── docs/                   
+└── scripts/                
 ```
 
 ---
