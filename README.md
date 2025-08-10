@@ -176,7 +176,7 @@ See the [LICENSE](LICENSE) file for details.
 
 - **Entrepreneurship Cell, VIT Chennai** – [Official Website](https://ecell-vit.vercel.app/)
 - Technical Team – Backend & Full Stack Development
-- Design Team – UI/UX & Branding
+- Full-stack Developer - [Aakar Gupta](https://github.com/AakarGupta-coder)
 
 ---
 
