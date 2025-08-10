@@ -28,7 +28,7 @@ Pitchers Showdown is an interactive platform by the Entrepreneurship Cell of VIT
 
 **Frontend:**
 - HTML5, CSS3, JavaScript
-- React.js (if used in your frontend)
+- React.js (Vite setup)
 - Responsive design principles
 
 **Backend:**
@@ -51,29 +51,43 @@ Pitchers Showdown is an interactive platform by the Entrepreneurship Cell of VIT
 
 ```
 Pitchers-Showdown/
-│
-├── client/                 
-│   ├── public/             
-│   ├── src/                
-│   │   ├── assets/         
-│   │   ├── components/     
-│   │   ├── pages/          
-│   │   ├── services/       
-│   │   └── styles/         
-│   └── config/             
-│
-├── server/                 
-│   ├── middleware/         
-│   ├── models/             
-│   ├── routes/             
-│   ├── utils/              
-│   └── config/             
-│
-│
-├── .gitignore
+├── server/
+│   ├── controllers/
+│   │   ├── BusinessList.js
+│   │   └── authController.js
+│   ├── middleware/
+│   │   └── middleware.js
+│   ├── models/
+│   │   ├── init.js
+│   │   ├── pitcher.js
+│   │   └── user.js
+│   ├── routes/
+│   │   ├── BusinessInfo.js
+│   │   └── authRoutes.js
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .env.example
+├── client/
+│   ├── public/
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   └── assets/
+│   │       └── react.svg
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── README.md
+│   ├── vite.config.js
+│   └── .gitignore
 ├── LICENSE
-└── README.md                   
-               
+├── README.md
+└── .gitignore
+
 ```
 
 ---
@@ -92,25 +106,38 @@ Pitchers-Showdown/
    cd pitchers-showdown
    ```
 
-2. **Install dependencies**
+2. **Install backend dependencies**
    ```bash
    cd server
    npm install
    ```
 
-3. **Set environment variables**
-   Create a `.env` file inside the `server` directory:
+3. **Install frontend dependencies**
+   ```bash
+   cd ../client
+   npm install
+   ```
+
+4. **Set environment variables**
+   Create a `.env` file inside the `server` directory based on `.env.example`:
    ```env
    PORT=5000
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
    ```
 
-4. **Run the development server**
+5. **Run the backend server**
    ```bash
+   cd server
    npm run dev
    ```
-   The server should now be running at `http://localhost:5000`
+
+6. **Run the frontend**
+   ```bash
+   cd client
+   npm run dev
+   ```
+   The frontend will run at `http://localhost:5173` (default Vite port).
 
 ---
 
@@ -147,7 +174,7 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 👥 Maintainers
 
-- **Entrepreneurship Cell, VIT Chennai** – [Official Website](https://vit.ac.in)
+- **Entrepreneurship Cell, VIT Chennai** – [Official Website](https://ecell-vit.vercel.app/)
 - Technical Team – Backend & Full Stack Development
 - Design Team – UI/UX & Branding
 
