@@ -69,8 +69,11 @@ Pitchers-Showdown/
 │   ├── utils/              
 │   └── config/             
 │
-├── docs/                   
-└── scripts/                
+│
+├── .gitignore
+├── LICENSE
+└── README.md                   
+               
 ```
 
 ---
